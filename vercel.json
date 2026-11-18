@@ -2,5 +2,9 @@
   "redirects": [
     { "source": "/farm-power-math", "destination": "/", "permanent": false },
     { "source": "/farm-power-math/:path*", "destination": "/:path*", "permanent": false }
+  ],
+  "rewrites": [
+    { "source": "/farm-power-math/", "destination": "/index.html" },
+    { "source": "/farm-power-math/:path*/", "destination": "/:path*/index.html" }
   ]
 }
