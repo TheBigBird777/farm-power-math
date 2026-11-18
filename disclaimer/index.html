@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Disclaimer | Farm Power Math</title>
+<meta name="description" content="Farm Power Math results are planning estimates, not electrical advice.">
+<link rel="canonical" href="https://farmpowermath.pages.dev/disclaimer/">
+<meta property="og:title" content="Disclaimer | Farm Power Math"><meta property="og:description" content="Farm Power Math results are planning estimates, not electrical advice."><meta property="og:type" content="website"><meta property="og:url" content="https://farmpowermath.pages.dev/disclaimer/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<style>
+  :root {
+    --bg: #f6f5f1; --surface: #ffffff; --text: #1e2124; --muted: #5b6168; --line: #d9d6cc;
+    --accent: #2f6b3a; --accent-soft: #e5efe3; --warn: #8a4b00; --warn-soft: #fbefdc; --bad: #a12a2a; --good: #2f6b3a;
+    --radius: 10px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #151714; --surface: #1d201c; --text: #e9ebe6; --muted: #a3a9a0; --line: #343a33;
+      --accent: #8cc98f; --accent-soft: #23301f; --warn: #f0b45e; --warn-soft: #33281a; --bad: #f08a8a; --good: #8cc98f;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #151714; --surface: #1d201c; --text: #e9ebe6; --muted: #a3a9a0; --line: #343a33;
+    --accent: #8cc98f; --accent-soft: #23301f; --warn: #f0b45e; --warn-soft: #33281a; --bad: #f08a8a; --good: #8cc98f;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  header, main, footer { max-width: 860px; margin: 0 auto; padding: 0 16px; }
+  header { padding-top: 28px; }
+  h1 { font-size: 1.7rem; margin: 0 0 4px; letter-spacing: -0.01em; }
+  h2 { font-size: 1.25rem; margin: 0 0 4px; }
+  h3 { font-size: 1rem; margin: 18px 0 6px; }
+  p { margin: 6px 0; }
+  .lede { color: var(--muted); margin-bottom: 14px; }
+  nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 20px; }
+  nav a { color: var(--accent); background: var(--accent-soft); padding: 6px 12px; border-radius: 999px; text-decoration: none; font-size: 0.92rem; }
+  section.calc { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px 16px; margin: 0 0 22px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; margin-top: 12px; }
+  label { display: block; font-size: 0.86rem; color: var(--muted); margin-bottom: 3px; }
+  input, select { width: 100%; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--text); font: inherit; }
+  input[type=checkbox] { width: auto; }
+  .check { display: flex; gap: 8px; align-items: center; font-size: 0.92rem; color: var(--text); }
+  .results { margin-top: 16px; padding: 14px; border-radius: 8px; background: var(--accent-soft); }
+  .results .big { font-size: 1.3rem; font-weight: 650; }
+  .results dl { display: grid; grid-template-columns: max-content 1fr; gap: 4px 14px; margin: 8px 0 0; }
+  .results dt { color: var(--muted); }
+  .results dd { margin: 0; font-variant-numeric: tabular-nums; }
+  .ok { color: var(--good); font-weight: 600; } .bad { color: var(--bad); font-weight: 600; }
+  .note { font-size: 0.86rem; color: var(--muted); }
+  .warnbox { background: var(--warn-soft); color: var(--text); border-left: 4px solid var(--warn); padding: 10px 12px; border-radius: 6px; font-size: 0.9rem; margin-top: 12px; }
+  table.rows { width: 100%; min-width: 560px; border-collapse: collapse; margin-top: 10px; font-size: 0.92rem; }
+  table.rows td input[type=number] { min-width: 84px; }
+  table.rows td input[type=text] { min-width: 150px; }
+  table.rows th { text-align: left; color: var(--muted); font-weight: 500; padding: 4px 6px; border-bottom: 1px solid var(--line); }
+  table.rows td { padding: 4px 6px; vertical-align: middle; }
+  table.rows td input { padding: 6px 8px; }
+  .rowbtn { background: none; border: 1px solid var(--line); color: var(--muted); border-radius: 6px; padding: 4px 8px; cursor: pointer; font: inherit; }
+  .addbtn { margin-top: 8px; background: var(--accent); color: #fff; border: none; border-radius: 8px; padding: 8px 14px; cursor: pointer; font: inherit; }
+  :root[data-theme="dark"] .addbtn { color: #10140f; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .addbtn { color: #10140f; } }
+  .scroll { overflow-x: auto; }
+  .adslot { display: none; } /* placeholder: ad slots stay hidden until an ad network is approved */
+  footer { padding-bottom: 40px; font-size: 0.86rem; color: var(--muted); }
+  @media (max-width: 520px) {
+    table.rows th:nth-child(1), table.rows td:nth-child(1) { min-width: 120px; }
+    .results dl { grid-template-columns: 1fr; gap: 0 0; }
+    .results dd { margin-bottom: 6px; }
+  }
+
+  .crumbs { font-size: 0.9rem; margin: 0 0 6px; } .crumbs a { color: inherit; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; margin: 18px 0; }
+  .card { display: block; padding: 16px; border: 1px solid var(--line, #ccd3c7); border-radius: 10px; text-decoration: none; color: inherit; }
+  .card strong { display: block; font-size: 1.05rem; margin-bottom: 4px; }
+  .explain { max-width: 760px; margin: 28px 0; } .explain h2 { font-size: 1.2rem; } .explain h3 { font-size: 1.02rem; margin-bottom: 4px; }
+  footer nav a { margin-right: 14px; }
+</style>
+
+</head><body><header><p class="crumbs"><a href="/">Farm Power Math</a></p><nav aria-label="Calculators"><a href="/wire-size-voltage-drop/">Wire size & voltage drop</a><a href="/battery-solar-sizing/">Battery & solar size</a><a href="/generator-size/">Generator size</a></nav></header><main class="explain"><h1>Disclaimer</h1><p>The calculators on this site give planning estimates based on published tables and simplified assumptions. They are not engineering, electrical or safety advice, and they don't account for every condition at your site.</p><p>Electrical work can kill or start fires. Wire sizing, overcurrent protection, grounding, burial depth, battery installation and generator connections are governed by the National Electrical Code and your local rules. Have a licensed electrician design or check any installation, and get the permits your area requires.</p><p>Never back-feed a building through an outlet. Use a listed transfer switch or interlock.</p><p>The site and its authors accept no liability for decisions made using these estimates.</p></main><footer>
+  <p>Farm Power Math is a free planning tool. Results are estimates, not engineering or electrical advice. Check your local code and have a licensed electrician confirm anything before you install it.</p>
+  <nav aria-label="Site"><a href="/">All calculators</a><a href="/about/">About</a><a href="/privacy/">Privacy</a><a href="/disclaimer/">Disclaimer</a></nav>
+  <!-- Affiliate disclosure placeholder: add only after an affiliate program is approved. -->
+</footer>
+</body></html>
