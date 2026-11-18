@@ -1,6 +1,6 @@
 {
-  "rewrites": [
-    { "source": "/farm-power-math", "destination": "/" },
-    { "source": "/farm-power-math/:path*", "destination": "/:path*" }
+  "redirects": [
+    { "source": "/farm-power-math", "destination": "/", "permanent": false },
+    { "source": "/farm-power-math/:path*", "destination": "/:path*", "permanent": false }
   ]
 }
