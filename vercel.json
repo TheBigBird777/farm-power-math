@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/farm-power-math", "destination": "/" },
+    { "source": "/farm-power-math/:path*", "destination": "/:path*" }
+  ]
+}
