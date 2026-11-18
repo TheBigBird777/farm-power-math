@@ -1,0 +1,3 @@
+# Netlify rewrite: the site was built for GitHub Pages under /farm-power-math/.
+# Serve those paths from the site root so links, favicon and calc.js work.
+/farm-power-math/*  /:splat  200
