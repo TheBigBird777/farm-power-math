@@ -14,6 +14,10 @@ jobs:
         run: |
           unzip -o 20-farm-power-math-site.zip -d .
           rm 20-farm-power-math-site.zip
+      - name: Fix paths for GitHub Pages project site
+        run: |
+          find . -type f \( -name '*.html' -o -name '*.xml' -o -name '*.txt' \) -not -path './.git/*' -exec sed -i 's|https://farmpowermath.pages.dev/|https://thebigbird777.github.io/farm-power-math/|g' {} +
+          find . -type f -name '*.html' -not -path './.git/*' -exec sed -i 's|href="/|href="/farm-power-math/|g; s|src="/|src="/farm-power-math/|g' {} +
       - name: Commit extracted files
         run: |
           git config user.name "TheBigBird777"
